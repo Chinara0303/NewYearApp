@@ -1,10 +1,5 @@
 ﻿using DomainLayer.Models;
 using ServiceLayer.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServiceLayer.Services
 {
@@ -17,7 +12,7 @@ namespace ServiceLayer.Services
             int count = 0;
             foreach (Employee employee in employees)
             {
-                if (employee.Birthday>firstDate && employee.Birthday<secondDate && employee.Salary>2000)
+                if (employee.Birthday > firstDate && employee.Birthday < secondDate && employee.Salary > 2000)
                 {
                     employees1[count] = employee;
                     count++;
