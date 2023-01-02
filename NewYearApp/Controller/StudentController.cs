@@ -1,8 +1,6 @@
 ﻿using DomainLayer.Models;
 using ServiceLayer.Services;
 using ServiceLayer.Services.Interfaces;
-using System.Diagnostics.Metrics;
-using System.Net;
 
 namespace NewYearApp.Controller
 {

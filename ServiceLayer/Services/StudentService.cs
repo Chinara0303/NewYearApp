@@ -1,9 +1,6 @@
-﻿
-using DomainLayer.Models;
-using ServiceLayer.Helpers.Constants;
+﻿using DomainLayer.Models;
 using ServiceLayer.Services.Interfaces;
-using System.Diagnostics.Metrics;
-using System.Linq;
+
 
 namespace ServiceLayer.Services
 {
@@ -53,7 +50,6 @@ namespace ServiceLayer.Services
             }
             return res;
         }
-       
         public Student[] SearchWithNameandSurname(string name, string surname)
         {
             Student[] students = GetStudents();
@@ -96,7 +92,6 @@ namespace ServiceLayer.Services
             }
             return count;
         }
-
         private Student[] GetStudents()
         {
             Student stu1 = new Student()

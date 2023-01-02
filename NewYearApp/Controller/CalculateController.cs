@@ -15,7 +15,7 @@ namespace NewYearApp.Controller
         public void Calculation()
         {
             Console.WriteLine("Enter a first number");
-          Number1: string num1Str=Console.ReadLine();
+   Number1: string num1Str = Console.ReadLine();
             int num1;
             bool IsParseNum1=int.TryParse(num1Str, out num1);
             if (!IsParseNum1)
@@ -27,7 +27,7 @@ namespace NewYearApp.Controller
             string operation = Console.ReadLine();
 
             Console.WriteLine("Enter a second number");
-         Number2: string num2Str = Console.ReadLine();
+   Number2: string num2Str = Console.ReadLine();
             int num2;
             bool IsParseNum2 = int.TryParse(num2Str, out num2);
             if (!IsParseNum2)
@@ -39,7 +39,7 @@ namespace NewYearApp.Controller
             {
                 Console.WriteLine("It cannot be divided by zero");
             }
-            var result = _service.Calculation(num1,num2,operation);
+            var result = _service.Calculation(num1, num2, operation);
             Console.WriteLine(result);
         }
     }
