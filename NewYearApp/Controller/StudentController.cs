@@ -12,27 +12,27 @@ namespace NewYearApp.Controller
         public void GetStudentAvgAge() => Console.WriteLine($"Average age of students-{_service.GetStudentAvgAge()}");
         public void GetStudentsEmailByFiltered()
         {
-            Console.WriteLine("Enter a letter");
+            Console.WriteLine("Enter letter");
             string letter = Console.ReadLine();
             Student[] result = _service.GetStudentsEmailByFiltered(letter);
             foreach (var item in result)
             {
-                if (item!=null)
+                if (item != null)
                 {
-                    Console.WriteLine($"{item.Id} Fullname: {item.Name} {item.Surname} Email: {item.Email} Address:{item.Address} ");
+                    Console.WriteLine($"Id: {item.Id}, Fullname: {item.Name} {item.Surname}, Age:{item.Age}, Email: {item.Email}, Address:{item.Address}");
                 }
             }
         }
         public void GetStudentsAddressByFiltered()
         {
-            Console.WriteLine("Enter a any address");
+            Console.WriteLine("Enter any address");
             string address = Console.ReadLine();
             Student[] result = _service.GetStudentsAddressByFiltered(address);
             foreach (var item in result)
             {
                 if (item != null)
                 {
-                    Console.WriteLine($"Id: {item.Id} Fullname: {item.Name} {item.Surname} Email: {item.Email} Address: {item.Address}");
+                    Console.WriteLine($"Id: {item.Id}, Fullname: {item.Name} {item.Surname}, Age:{item.Age}, Email: {item.Email}, Address: {item.Address}");
                 }
             }
         }
@@ -47,7 +47,7 @@ namespace NewYearApp.Controller
             {
                 if (item != null)
                 {
-                    Console.WriteLine($"Id: {item.Id} Fullname: {item.Name} {item.Surname} Email: {item.Email} Address: {item.Address}");
+                    Console.WriteLine($"Id: {item.Id}, Fullname: {item.Name} {item.Surname}, Age:{item.Age}, Email: {item.Email}, Address: {item.Address}");
                 }
             }
         }
@@ -61,7 +61,7 @@ namespace NewYearApp.Controller
             {
                 if (item != null)
                 {
-                    Console.WriteLine($"Id: {item.Id} Fullname: {item.Name} {item.Surname}");
+                    Console.WriteLine($"Id: {item.Id}, Fullname: {item.Name} {item.Surname}");
                 }
             }
         }

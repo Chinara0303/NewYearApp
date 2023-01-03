@@ -1,7 +1,6 @@
 ﻿using DomainLayer.Models;
 using ServiceLayer.Services.Interfaces;
 
-
 namespace ServiceLayer.Services
 {
     public class StudentService:IStudentService 
