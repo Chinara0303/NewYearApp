@@ -1,9 +1,4 @@
 ﻿using ServiceLayer.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NewYearApp.Controller
 {
@@ -11,7 +6,6 @@ namespace NewYearApp.Controller
     {
         private readonly CalculateService _service;
         public CalculateController() => _service = new CalculateService();
-        
         public void Calculation()
         {
             Console.WriteLine("Enter a first number");

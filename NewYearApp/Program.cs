@@ -7,8 +7,8 @@ StudentController studentController = new();
 //studentController.GetStudentsEmailByFiltered();
 //studentController.GetStudentsAddressByFiltered();
 //studentController.SearchWithNameandSurname();
-//studentController.SearchWithStr();
-studentController.GetSameNameStudents();
+studentController.SearchWithStr();
+//studentController.GetSameNameStudents();
 #endregion
 
 #region Fibonacci

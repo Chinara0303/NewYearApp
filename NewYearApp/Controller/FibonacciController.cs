@@ -5,7 +5,7 @@ namespace NewYearApp.Controller
     public class FibonacciController
     {
         private readonly FibonacciService _service;
-        public FibonacciController() => _service= new FibonacciService();
+        public FibonacciController() => _service = new FibonacciService();
         
         public void GetFibNums()
         {

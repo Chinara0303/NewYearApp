@@ -41,7 +41,7 @@ namespace NewYearApp.Controller
             Console.WriteLine("Enter name");
             string name = Console.ReadLine();
             Console.WriteLine("Enter surname");
-            string surname= Console.ReadLine();
+            string surname = Console.ReadLine();
             Student[] result = _service.SearchWithNameandSurname(name,surname);
             foreach (var item in result)
             {
